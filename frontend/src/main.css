@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+.navbar-link {
+  @apply transition-colors duration-300;
+}
+
+.navbar-link:hover {
+  @apply text-white;
+}
