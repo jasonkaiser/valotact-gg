@@ -4,9 +4,9 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const Main = () => {
     return (
-        <section className="flex h-screen overflow-hidden w-screen flex-col items-center bg-[url('/hero-background.png')] bg-cover">
-            <div className="flex h-screen w-screen justify-between">
-                <div className="ml-28 mt-55 flex">
+        <section className="flex w-screen flex-col items-center bg-[url('/hero-background.png')] bg-cover">
+            <div className="flex w-screen justify-between flex-col">
+                <div className="ml-28 mt-55 flex max-lg:flex-col-reverse max-lg:ml-0 max-lg:items-center">
                         
                             <svg
                             className="mt-20 rotate-[-40deg]"
@@ -25,7 +25,7 @@ const Main = () => {
                             </svg>
 
                         <div>
-                            <div className="bg-clip-text text-transparent text-[24px]"
+                            <div className="bg-clip-text text-transparent text-[24px] max-lg:text-xl max-lg:text-center"
                             style={{
                                 backgroundImage: `
                                 radial-gradient(490px circle at 27% 60%, rgba(255, 255, 255, 1) 4%, rgba(255, 255, 255, 0) 44%),
@@ -37,16 +37,16 @@ const Main = () => {
                             }}
                         >
                         <h1 className="sequelFont tracking-wider">Win with <span className="sequelFont-Bold">Tactics.</span></h1>
-                        <h1 className="sequelFont ml-36 tracking-wider">Not just <span className="sequelFont-Bold">Aim!</span></h1>
+                        <h1 className="sequelFont ml-36 tracking-wider max-lg:ml-0">Not just <span className="sequelFont-Bold">Aim!</span></h1>
                         </div>
-                        <p className="ml-51 mt-2 text-[#626A76]">Track your matches, build strategies, and outsmart the meta</p>
+                        <p className="ml-51 mt-2 text-[#626A76] max-lg:ml-0 max-lg:text-center">Track your matches, build strategies, and outsmart the meta</p>
                         </div>
                     </div>
                 
-        <div className="flex items-end mb-25">
+        <div className="flex justify-end max-lg:justify-center max-md:mt-30 max-xl:mt-30">
 
                     <div>
-                        <div className="relative mr-70 mt-25 flex">
+                        <div className="relative mr-70 mt-25 flex max-lg:mr-0">
         
           <div className="bg-clip-text text-transparent text-[12px]"
                 style={{
@@ -60,7 +60,7 @@ const Main = () => {
                 }}
                 >
         <h1 className="sequelFont tracking-wider">Increase your round</h1>
-        <h1 className="sequelFont-Bold ml-6 tracking-wider">
+        <h1 className="sequelFont-Bold ml-6 max-md:ml-0 tracking-wider">
             Winrate<span className="sequelFont"> by up to </span>72%
         </h1>
     </div>
@@ -68,14 +68,14 @@ const Main = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" 
                                 width={96} 
                                 height={96} 
-                                className="absolute ml-100 mt-[-60px]"
+                                className="absolute ml-100 mt-[-60px] max-md:ml-40 max-md:mt-[-110px]"
                                 style={{ filter: `drop-shadow(0 0 15px #FF5252) drop-shadow(0 0 55px #FF5252) drop-shadow(0 0 120px #FF5252)`,}}
                                 viewBox="0 0 16 16">
                                 <path fill="#FF5252" 
                                 fillRule="evenodd" 
                                 d="M13.293 0c.39 0 .707.317.707.707V2h1.293a.707.707 0 0 1 .5 1.207l-1.46 1.46A1.14 1.14 0 0 1 13.53 5h-1.47L8.53 8.53a.75.75 0 0 1-1.06-1.06L11 3.94V2.47c0-.301.12-.59.333-.804l1.46-1.46a.7.7 0 0 1 .5-.207M2.5 8a5.5 5.5 0 0 1 6.598-5.39a.75.75 0 0 0 .298-1.47A7 7 0 1 0 14.86 6.6a.75.75 0 0 0-1.47.299q.109.533.11 1.101a5.5 5.5 0 1 1-11 0m5.364-2.496a.75.75 0 0 0-.08-1.498A4 4 0 1 0 11.988 8.3a.75.75 0 0 0-1.496-.111a2.5 2.5 0 1 1-2.63-2.686" clipRule="evenodd"></path></svg> 
                         </div>
-                        <div className=" text-[#626A76] flex flex-col gap-1 mt-8 ml-25">
+                        <div className=" text-[#626A76] flex flex-col gap-1 mt-8 ml-25 max-lg:ml-7">
                                     <div className="flex items-center gap-3"><FaCheckCircle size={16} 
                                                                                             color="#FF5252"
                                                                                             style={{ filter: `drop-shadow(0 0 5px #FF5252) drop-shadow(0 0 30px #FF5252)`,}}/>
@@ -96,7 +96,8 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            <a href="" className="robotoBold px-6 py-2 rounded-3xl border-1 border-[#FF5252] text-[#FF5252] mb-30 text-2xl hover:bg-[#FF5252] hover:text-[#0A0F17] transition duration-300">CREATE TACTICS</a>
+                <div className="mt-25 mb-20">
+                    <a href="" className="robotoBold px-6 py-2 rounded-3xl border-1 border-[#FF5252] text-[#FF5252] text-2xl hover:bg-[#FF5252] hover:text-[#0A0F17] transition duration-300">CREATE TACTICS</a></div>
         </section>
     );
 
